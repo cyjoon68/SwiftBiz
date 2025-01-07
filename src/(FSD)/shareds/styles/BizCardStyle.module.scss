@@ -1,1 +1,11 @@
 @use "theme";
+
+.canvas_container {
+    display: block;
+    width: 60% !important;
+    height: 60% !important;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
