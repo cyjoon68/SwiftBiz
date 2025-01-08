@@ -1,0 +1,20 @@
+.header {
+    display: block;
+    
+    .header_inner {
+        height: 80px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        .log_btns {
+            display: block;
+
+            button {
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

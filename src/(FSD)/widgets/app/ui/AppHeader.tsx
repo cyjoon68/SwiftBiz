@@ -2,26 +2,24 @@ import React from "react";
 import AppContainer from "./AppContainer";
 import AppInner from "./AppInner";
 import styles from "@/(FSD)/shareds/styles/AppStyle.module.scss";
-import CartProductBtn from "@/(FSD)/entities/cart/ui/CartProductBtn";
-import IconBtnShared from "@/(FSD)/shareds/ui/IconBtnShared";
+import LogoShared from "@/(FSD)/shareds/ui/LogoShared";
+import { Button } from "@nextui-org/button";
 
 interface AppHeaderProps {
-    leftContent?: React.ReactNode;
-    rightContent?: React.ReactNode;
-    centerContent?: React.ReactNode;
-    defaultCartButton?: boolean;
-    defaultSearchButton?: boolean;
+
 }
 
-const AppHeader = ({ leftContent, centerContent, rightContent, defaultSearchButton = false, defaultCartButton = false } : AppHeaderProps) => {
+const AppHeader = ({} : AppHeaderProps) => {
     return (
         <header className={`border-default-100 border-b-small ${styles.header}`}>
             <AppContainer>
                 <AppInner>
                     <div className={styles.header_inner}>
-                        <div className={styles.left_content}>{leftContent}</div>
-                        <div className={styles.center_content}>{centerContent}</div>
-                        <div className={styles.right_content}>{rightContent}{defaultSearchButton && <IconBtnShared href={"/search"} iconProps={{ iconType: "search" }} />}{defaultCartButton && <CartProductBtn />}</div>
+                        <LogoShared />
+                        <div className={styles.log_btns}>
+                            <Button size={"lg"} variant={"light"}>로그인</Button>
+                            <Button color={"primary"} size={"lg"}>빠른 가입하기</Button>
+                        </div>
                     </div>
                 </AppInner>
             </AppContainer>
@@ -29,4 +27,4 @@ const AppHeader = ({ leftContent, centerContent, rightContent, defaultSearchButt
     );
 };
 
-export default AppHeader;0
+export default AppHeader;
