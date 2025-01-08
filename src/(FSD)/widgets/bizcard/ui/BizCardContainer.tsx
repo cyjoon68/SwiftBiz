@@ -29,17 +29,6 @@ const BizCardContainer = () => {
         }
     }, []);
 
-    const bizCardData: BizCardType = {
-        name: "ChaeYoungJoon",
-        affiliation: "Mosque",
-        title: "Develop",
-        phone: "+82(0)10 5913 6475",
-        email: "chaeyj568@gmail.com",
-        company: "ideaocean",
-        address: "Bongcheon-ro, Gwanak-gu, Seoul",
-        website: "ideaocean.ai"
-    };
-
     return (
         <Canvas className={styles.canvas_container}>
             <OrbitControls
@@ -54,7 +43,7 @@ const BizCardContainer = () => {
             <spotLight position={[10, 15, 10]} angle={0.3} />
             <pointLight position={[-10, -10, -10]} />
 
-            <BizCard bizCard={bizCardData} />
+            <BizCard />
         </Canvas>
     );
 };
