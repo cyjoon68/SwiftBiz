@@ -10,7 +10,7 @@ interface AppSectionProps {
 
 const AppSection = ({ isBgColor = false, isPadTop = true, isPadBtm = true, children }: AppSectionProps) => {
     return (
-        <section data-slot={"section"} className={`${isBgColor ? "bg-content2" : ""} ${styles.section} ${isPadTop && styles.pad_top} ${isPadBtm && styles.pad_btm}`}>
+        <section data-slot={"section"} className={`${isBgColor ? "bg-content3" : ""} ${styles.section} ${isPadTop && styles.pad_top} ${isPadBtm && styles.pad_btm}`}>
             {children}
         </section>
     );

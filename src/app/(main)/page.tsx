@@ -6,7 +6,7 @@ import BizCardContainer from "@/(FSD)/widgets/\bbizcard/ui/BizCardContainer";
 
 const Page = () => {
     return (
-        <AppSection isPadBtm={false} isPadTop={false}>
+        <AppSection isBgColor isPadBtm={false} isPadTop={false}>
             <BizCardContainer />
         </AppSection>
     );
